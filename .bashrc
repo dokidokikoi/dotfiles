@@ -51,19 +51,11 @@ alias gcheck="git checkout"
 # SCRIPTS
 # -----------------------------------------------------
 
-# alias gr='python ~/dotfiles/scripts/growthrate.py'
-# alias ChatGPT='python ~/mychatgpt/mychatgpt.py'
-# alias chat='python ~/mychatgpt/mychatgpt.py'
 alias ascii='~/.config/scripts/figlet.sh'
 
 # -----------------------------------------------------
 # VIRTUAL MACHINE
 # -----------------------------------------------------
-
-# alias vm='~/private/launchvm.sh'
-# alias lg='~/dotfiles/scripts/looking-glass.sh'
-# alias vmstart='virsh --connect qemu:///system start win11'
-# alias vmstop='virsh --connect qemu:///system destroy win11'
 
 # -----------------------------------------------------
 # EDIT CONFIG FILES
