@@ -1,5 +1,5 @@
 #!/bin/bash
-
+datets=$(date '+%Y%m%d%H%M%S')
 # ------------------------------------------------------
 # Function: Set Archlinuxcn
 # ------------------------------------------------------
@@ -117,12 +117,12 @@ _installSymLink() {
         echo "Symlink ${linksource} -> ${linktarget} created."
     else
         if [ -d ${symlink} ]; then
-            rm -rf ${symlink}/ 
+            mv ${symlink}/ ${symlink}-${datats}.bak
             ln -s ${linksource} ${linktarget}
             echo "Symlink for directory ${linksource} -> ${linktarget} created."
         else
             if [ -f ${symlink} ]; then
-                rm ${symlink} 
+                mv ${symlink} ${symlink}-${datats}.bak
                 ln -s ${linksource} ${linktarget} 
                 echo "Symlink to file ${linksource} -> ${linktarget} created."
             else

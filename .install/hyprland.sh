@@ -51,7 +51,6 @@ packagesPacman=(
 
 packagesYay=(
     "brave-bin" 
-    "neofetch" 
     "bibata-cursor-theme" 
     "swww" 
     "swaylock-effects" 

@@ -21,13 +21,12 @@ alias nf='neofetch'
 alias ls='eza -al'
 alias shutdown='systemctl poweroff'
 alias v='nvim'
-# alias ts='~/dotfiles/scripts/snapshot.sh'
+alias ts='~/.config/scripts/snapshot.sh'
 alias matrix='cmatrix'
 alias wifi='nmtui'
 # alias od='~/private/onedrive.sh'
-alias rw='~/dotfiles/waybar/reload.sh'
+alias rw='~/.config/waybar/reload.sh'
 alias winclass="xprop | grep 'CLASS'"
-# alias dot="cd ~/dotfiles"
 
 # -----------------------------------------------------
 # Window Managers
@@ -55,7 +54,7 @@ alias gcheck="git checkout"
 # alias gr='python ~/dotfiles/scripts/growthrate.py'
 # alias ChatGPT='python ~/mychatgpt/mychatgpt.py'
 # alias chat='python ~/mychatgpt/mychatgpt.py'
-# alias ascii='~/dotfiles/scripts/figlet.sh'
+alias ascii='~/.config/scripts/figlet.sh'
 
 # -----------------------------------------------------
 # VIRTUAL MACHINE
@@ -72,7 +71,7 @@ alias gcheck="git checkout"
 
 # alias confq='nvim ~/dotfiles/qtile/config.py'
 # alias confp='nvim ~/dotfiles/picom/picom.conf'
-# alias confb='nvim ~/dotfiles/.bashrc'
+alias confb='nvim ~/.bashrc'
 
 # -----------------------------------------------------
 # EDIT NOTES
@@ -112,12 +111,8 @@ cat ~/.cache/wal/sequences
 # -----------------------------------------------------
 echo ""
 if [[ $(tty) == *"pts"* ]]; then
-    pfetch
+    neofetch
 else
-    if [ -f /bin/qtile ]; then
-        echo "Start Qtile X11 with command Qtile"
-        echo "Start Qtile Wayland with command QtileWayland"
-    fi
     if [ -f /bin/hyprctl ]; then
         echo "Start Hyprland with command Hyprland"
     fi

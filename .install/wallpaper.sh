@@ -17,7 +17,7 @@ if [ ! -d ~/wallpaper ]; then
     mkdir ~/wallpaper
     echo "Create wallpaper floder."
 fi
-if [ -z "$(ls -A ~/wallpaper)" ]; then
+if [ -z "$(ls -A ~/wallpaper/default.jpg)" ]; then
     wget -O ~/wallpaper/default.jpg https://w.wallhaven.cc/full/jx/wallhaven-jxl7ow.jpg
 fi
 

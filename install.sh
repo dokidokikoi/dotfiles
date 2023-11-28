@@ -18,10 +18,12 @@ source .install/library.sh
 source .install/required.sh
 source .install/packages.sh
 source .install/install-packages.sh
+source .install/backup.sh
 source .install/profile.sh
 if [[ $profile == *"Hyprland"* ]]; then
     source .install/hyprland.sh
     source .install/install-packages.sh
+    source .install/install-config.sh
 fi
 source .install/pywal.sh
 source .install/wallpaper.sh
