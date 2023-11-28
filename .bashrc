@@ -61,8 +61,6 @@ alias ascii='~/.config/scripts/figlet.sh'
 # EDIT CONFIG FILES
 # -----------------------------------------------------
 
-# alias confq='nvim ~/dotfiles/qtile/config.py'
-# alias confp='nvim ~/dotfiles/picom/picom.conf'
 alias confb='nvim ~/.bashrc'
 
 # -----------------------------------------------------
