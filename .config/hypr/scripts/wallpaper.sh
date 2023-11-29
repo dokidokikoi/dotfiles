@@ -21,7 +21,7 @@ case $1 in
 
     # Select wallpaper with rofi
     "select")
-        selected=$(ls -1 ~/wallpaper | grep "jpg" | rofi -dmenu -replace -config ~/dotfiles/rofi/config-wallpaper.rasi)
+        selected=$(ls -1 ~/wallpaper | grep "jpg" | rofi -dmenu -replace -config ~/.config/rofi/config-wallpaper.rasi)
         if [ ! "$selected" ]; then
             echo "No wallpaper selected"
             exit
@@ -55,7 +55,7 @@ newwall=$(echo $wallpaper | sed "s|$HOME/wallpaper/||g")
 # ----------------------------------------------------- 
 # Reload waybar with new colors
 # -----------------------------------------------------
-~/dotfiles/waybar/launch.sh
+~/.config/waybar/launch.sh
 
 # ----------------------------------------------------- 
 # Set the new wallpaper

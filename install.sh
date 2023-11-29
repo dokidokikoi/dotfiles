@@ -14,6 +14,15 @@ echo "${NONE}"
 
 echo "This script will guide you through the installation process of my dotfiles."
 
+if [[ ! -d $(pwd)/.install ]]; then
+    echo "Please run script under the dotfiles folder"
+    exit 1
+fi
+if [ "$EUID" == 0 ]; then
+    echo "don't use sudo or root run this script"
+    exit 1
+fi
+
 source .install/library.sh
 source .install/required.sh
 source .install/packages.sh
