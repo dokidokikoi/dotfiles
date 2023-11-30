@@ -23,6 +23,7 @@ if [ "$EUID" == 0 ]; then
     exit 1
 fi
 
+sudo chmod +x $(pwd)/*
 source .install/library.sh
 source .install/required.sh
 source .install/packages.sh
