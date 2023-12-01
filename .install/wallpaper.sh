@@ -18,7 +18,7 @@ if [ ! -d ~/wallpaper ]; then
     echo "Create wallpaper floder."
 fi
 if [ -z "$(ls -A ~/wallpaper/default.jpg)" ]; then
-    wget -O ~/wallpaper/default.jpg https://w.wallhaven.cc/full/jx/wallhaven-jxl7ow.jpg
+    wget -O ~/wallpaper/default.jpg https://pic.netbian.com/uploads/allimg/230921/170528-169528712849f8.jpg
 fi
 
 if [ ! -f ~/.cache/current_wallpaper.jpg ]; then

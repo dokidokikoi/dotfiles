@@ -117,12 +117,12 @@ _installSymLink() {
         echo "Symlink ${linksource} -> ${linktarget} created."
     else
         if [ -d ${symlink} ]; then
-            mv ${symlink}/ ${symlink}-${datats}.bak
+            mv ${symlink}/ ${symlink}-${datets}.bak
             ln -s ${linksource} ${linktarget}
             echo "Symlink for directory ${linksource} -> ${linktarget} created."
         else
             if [ -f ${symlink} ]; then
-                mv ${symlink} ${symlink}-${datats}.bak
+                mv ${symlink} ${symlink}-${datets}.bak
                 ln -s ${linksource} ${linktarget} 
                 echo "Symlink to file ${linksource} -> ${linktarget} created."
             else

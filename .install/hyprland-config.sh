@@ -12,6 +12,8 @@ _installSymLink .gtkrc-2.0 ~/.gtkrc-2.0 $current_directory/.config/gtk/.gtkrc-2.
 _installSymLink .Xresources ~/.Xresources $current_directory/.config/gtk/.Xresources ~/.Xresources
 _installSymLink gtk-3.0 ~/.config/gtk-3.0 $current_directory/.config/gtk/gtk-3.0/ ~/.config/
 _installSymLink gtk-4.0 ~/.config/gtk-4.0 $current_directory/.config/gtk/gtk-4.0/ ~/.config/ 
+_installSymLink gtk ~/.config/gtk $current_directory/.config/gtk/ ~/.config/ 
+_installSymLink wal ~/.config/wal $current_directory/.config/wal/ ~/.config/ 
 
 echo "Symbolic links created."
 echo ""
