@@ -22,7 +22,7 @@ packagesPacman=(
     "noto-fonts-cjk" 
     "noto-fonts-emoji" 
     "noto-fonts-extra"
-    "ttf-jetbrains-mono-fonts"
+    "ttf-jetbrains-mono"
 
     "ark"
     "p7zip"
