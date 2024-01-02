@@ -37,3 +37,4 @@ if [[ $profile == *"Hyprland"* ]]; then
 fi
 source .install/pywal.sh
 source .install/wallpaper.sh
+source .install/fish.sh

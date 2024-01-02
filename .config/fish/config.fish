@@ -1,16 +1,15 @@
-#    _               _              
-#   | |__   __ _ ___| |__  _ __ ___ 
-#   | '_ \ / _` / __| '_ \| '__/ __|
-#  _| |_) | (_| \__ \ | | | | | (__ 
-# (_)_.__/ \__,_|___/_| |_|_|  \___|
-# 
 # -----------------------------------------------------
-# ~/.bashrc
+# PYWAL
+# -----------------------------------------------------
+cat ~/.cache/wal/sequences
+
+source ~/.cache/wal/colors.fish
+
+# -----------------------------------------------------
+# ENVIRONMENT VARIABLES
 # -----------------------------------------------------
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-PS1='[\u@\h \W]\$ '
+set -x PATH ~/go/bin /usr/lib/ccache/bin/ $PATH
 
 # -----------------------------------------------------
 # ALIASES
@@ -84,30 +83,6 @@ alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias res1='xrandr --output DisplayPort-0 --mode 2880x1800 --rate 120'
 alias res2='xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120'
 
-export PATH="/usr/lib/ccache/bin/:$PATH"
-
-# -----------------------------------------------------
-# START STARSHIP
-# -----------------------------------------------------
-# eval "$(starship init bash)"
-
-# -----------------------------------------------------
-# PYWAL
-# -----------------------------------------------------
-cat ~/.cache/wal/sequences
-
-export https_proxy=http://127.0.0.1:7890 \
-    http_proxy=http://127.0.0.1:7890 \
-    all_proxy=socks5://127.0.0.1:7890 
-
-# -----------------------------------------------------
-# PFETCH if on wm
-# -----------------------------------------------------
-echo ""
-if [[ $(tty) == *"pts"* ]]; then
-    neofetch
-else
-    if [ -f /bin/hyprctl ]; then
-        echo "Start Hyprland with command Hyprland"
-    fi
-fi
+set -x https_proxy http://127.0.0.1:7890
+set -x http_proxy http://127.0.0.1:7890
+set -x all_proxy socks5://127.0.0.1:7890 
