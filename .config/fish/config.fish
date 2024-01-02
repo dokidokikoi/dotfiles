@@ -83,6 +83,6 @@ alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias res1='xrandr --output DisplayPort-0 --mode 2880x1800 --rate 120'
 alias res2='xrandr --output DisplayPort-0 --mode 1920x1080 --rate 120'
 
-set -x https_proxy http://127.0.0.1:7890
-set -x http_proxy http://127.0.0.1:7890
-set -x all_proxy socks5://127.0.0.1:7890 
+set -x https_proxy http://127.0.0.1:20171
+set -x http_proxy http://127.0.0.1:20170
+set -x all_proxy socks5://127.0.0.1:20170 
