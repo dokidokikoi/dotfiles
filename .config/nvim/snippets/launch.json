@@ -1,0 +1,35 @@
+{
+    "Boilerplate Component": {
+        "prefix": "god",
+        "descruption": "go debug file",
+        "body": [
+            "{",
+            "\t\"version\": \"0.2.0\",",
+            "\t\"configurations\": [",
+            "\t\t{",
+            "\t\t\t\"name\": \"Launch Package\",",
+            "\t\t\t\"type\": \"go\",",
+            "\t\t\t\"request\": \"debug\",",
+            "\t\t\t\"program\": \"\\${workspaceFolder}/cmd\",",
+            "\t\t\t\"args\": [],",
+            "\t\t\t\"env\": {}",
+            "\t\t}",
+            "\t]",
+            "}"
+        ]
+    },
+    "Boilerplate Component2": {
+        "prefix": "godc",
+        "descruption": "go debug file config",
+        "body": [
+            "{",
+            "\t\"name\": \"Launch Package\",",
+            "\t\"type\": \"go\",",
+            "\t\"request\": \"debug\",",
+            "\t\"program\": \"\\${workspaceFolder}/cmd\",",
+            "\t\"args\": [],",
+            "\t\"env\": {}",
+            "}"
+        ]
+    }
+}
